@@ -1,4 +1,4 @@
-# mongodb-wind-turbine
+# Wind Turbine Diagnostics using MongoDB Vector Search
 
 A tongue-in-cheek demonstration of MongoDB's Vector Search capabilities for anomaly detection through sound input, using a basic handheld fan as our makeshift wind turbine. This demo enables real-time diagnosis by analyzing the emitted audio, allowing us to diagnose its condition—whether it's operating normally, stopped, or experiencing any issues.
 
@@ -55,7 +55,7 @@ Select the audio input by typing the relevant number and then press enter. Recor
 > We recommend using an external microphone and placing it very close to the fan or audio source.
 
 ## 4. Create a Search Index
-Go to MongoDB Atlas and create an Atlas Search Index in the audio database sounds collection and using the content of searchindex.json
+Go to MongoDB Atlas and create an Atlas Search Index in the **audio** database **sounds** collection and using the content of searchindex.json
 ```
 {
     "fields": [
@@ -82,11 +82,11 @@ Run ```node nodeui.js```
 Use a browser to open the link http://localhost:3000/
 
 ## 7. Atlas Charts
-In Atlas, go to charts and click the down arrow next to Add Dashboard then click import dashboard.
+In Atlas, go to charts and click the down arrow next to **Add Dashboard** then click **Import Dashboard**.
 
 Select the file ```Sounds.charts``` and click next.
 
-Click on the pencil icon and ensure the database and collection match audio and results.
+Click on the pencil icon and ensure the database and collection match **audio** and **results**.
 
 Click 'Save', and then 'Save'.
 
