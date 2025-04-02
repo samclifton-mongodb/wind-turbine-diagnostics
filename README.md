@@ -1,5 +1,8 @@
 # mongodb-wind-turbine
-A tongue in cheek demonstration of using mongodb's vector search to determine issues with wind turbines
+A tongue-in-cheek demonstration of MongoDB's Vector Search capabilities for anomaly detection through sound input, using a basic handheld fan as our makeshift wind turbine. This demo enables real-time diagnosis by analyzing the emitted audio, allowing us to diagnose its condition—whether it's operating normally, stopped, or experiencing any issues.
+
+![image](https://github.com/user-attachments/assets/9cf424df-d513-4ee3-a417-31c3dccc0ce3)
+
 
 Create a file called .env in the main directory alongside the add_audio.py file and add your atlas connection string.  Then copy this file in to the nodeUI directory too.
 
