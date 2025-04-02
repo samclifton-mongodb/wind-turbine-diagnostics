@@ -40,7 +40,7 @@ pip install python-dotenv
 ```
 pip install certifi
 ```
-> [!NOTE}
+> [!NOTE]
 > If you get a problem when running ```pip install pyaudio``` run ```brew install portaudio```.
 
 ## 3. Record Audio Files
