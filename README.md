@@ -8,11 +8,11 @@ A tongue-in-cheek demonstration of MongoDB's Vector Search capabilities for anom
 Install Node.js (Tested with Node.js v20.8.0)
     
 ## 1. MongoDB Atlas Connection
-Create a file called .env in the main directory alongside the add_audio.py file and add your atlas connection string, in the following format:
+Create a file called ```.env``` in the main directory alongside the ```add_audio.py``` file and add your Atlas connection string, in the following format:
 ```
 MONGO_CONNECTION_STRING="mongodb+srv://connectionstringfromatlas"
 ```
-Then copy this file in to the nodeUI directory too.
+Then copy this file in to the ```nodeUI``` directory too.
 
 ## 2. Install Python Modules
 Install the required python modules.
@@ -44,7 +44,7 @@ pip install certifi
 > If you get a problem when running ```pip install pyaudio``` run ```brew install portaudio```.
 
 ## 3. Record Audio Files
-Run python3 add_audio.py
+Run ```python3 add_audio.py```
 
 Select the audio input by typing the relevant number and then press enter. Record each sound in sequence.
 
@@ -73,7 +73,7 @@ Go to MongoDB Atlas and create an Atlas Search Index in the audio database sound
 Run ```python3 live_query.py``` and place your microphone next to the fan.
 
 ## 6. Run the Frontend
-Switch to a new console and cd to the 'nodeUI' directory.
+Switch to a new console and cd to the ```nodeUI``` directory.
 
 Run ```npm install```
 
@@ -84,10 +84,10 @@ Use a browser to open the link http://localhost:3000/
 ## 7. Atlas Charts
 In Atlas, go to charts and click the down arrow next to Add Dashboard then click import dashboard.
 
-Select the file Sounds.charts and click next.
+Select the file ```Sounds.charts``` and click next.
 
 Click on the pencil icon and ensure the database and collection match audio and results.
 
-Click 'Save', and the 'Save'.
+Click 'Save', and then 'Save'.
 
 Click the new dashboard 'Sounds' to see analytics on the sounds that are being detected by the microphone.
