@@ -9,30 +9,37 @@ Install Node.js (Tested with Node.js v20.8.0)
     
 ## 1. MongoDB Atlas Connection
 Create a file called .env in the main directory alongside the add_audio.py file and add your atlas connection string, in the following format:
-
+```
 MONGO_CONNECTION_STRING="mongodb+srv://connectionstringfromatlas"
-
+```
 Then copy this file in to the nodeUI directory too.
 
 ## 2. Install Python Modules
 Install the required python modules.
-
+```
 pip install pyaudio
-
+```
+```
 pip install numpy
-
+```
+```
 pip install pymongo
-
+```
+```
 pip install librosa
-
+```
+```
 pip install panns_inference
-
+```
+```
 pip install torch
-
+```
+```
 pip install python-dotenv
-
+```
+```
 pip install certifi
-
+```
 NOTE: If you get a problem when running pip install pyaudio run brew install portaudio.
 
 ## 3. Record Audio Files
@@ -40,15 +47,15 @@ Run python3 add_audio.py
 
 Select the audio input by typing the relevant number and then press enter. Record each sound in sequence.
 
-NOTE: If you get a problem when running python add_audio.py run brew install wget.
+> [!NOTE]
+> If you get a problem when running ```python add_audio.py``` run ```brew install wget```.
 
-Tip
-
-We recommend using an external microphone and placing it very close to the fan or audio source.
+> [!TIP]
+> We recommend using an external microphone and placing it very close to the fan or audio source.
 
 ## 4. Create a Search Index
 Go to MongoDB Atlas and create an Atlas Search Index in the audio database sounds collection and using the content of searchindex.json
-
+```
 {
     "fields": [
     {
@@ -60,16 +67,16 @@ Go to MongoDB Atlas and create an Atlas Search Index in the audio database sound
     }
   ]
 }
-  
+``` 
 ## 5. Query the Database
-Run python3 live_query.py and place your microphone next to the fan.
+Run ```python3 live_query.py``` and place your microphone next to the fan.
 
 ## 6. Run the Frontend
 Switch to a new console and cd to the 'nodeUI' directory.
 
-Run npm install
+Run ```npm install```
 
-Run node nodeui.js
+Run ```node nodeui.js```
 
 Use a browser to open the link http://localhost:3000/
 
