@@ -1,0 +1,8 @@
+pyaudio
+numpy
+pymongo
+librosa
+panns_inference
+torch
+python-dotenv
+certifi

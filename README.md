@@ -15,31 +15,18 @@ MONGO_CONNECTION_STRING="mongodb+srv://connectionstringfromatlas"
 Then copy this file in to the ```nodeUI``` directory too.
 
 ## 2. Install Python Modules
+
+Run ```python3 -m venv path/to/venv```
+Run ```source path/to/venv/bin/activate```
+
+> [!NOTE]
+> Be sure to change the path in the command above.
+
 Install the required python modules.
 ```
-pip install pyaudio
+python3 -m pip install -r requirements.txt
 ```
-```
-pip install numpy
-```
-```
-pip install pymongo
-```
-```
-pip install librosa
-```
-```
-pip install panns_inference
-```
-```
-pip install torch
-```
-```
-pip install python-dotenv
-```
-```
-pip install certifi
-```
+
 > [!NOTE]
 > If you get a problem when running ```pip install pyaudio``` run ```brew install portaudio```.
 
@@ -58,13 +45,12 @@ Select the audio input by typing the relevant number and then press enter. Recor
 Go to MongoDB Atlas and create an Atlas Search Index in the **audio** database **sounds** collection and using the content of searchindex.json
 ```
 {
-    "fields": [
+  "fields": [
     {
-        "emb": {
-        "dimensions": 2048,
-        "similarity": "cosine",
-        "type": "vector"
-      }
+      "numDimensions": 2048,
+      "path": "emb",
+      "similarity": "cosine",
+      "type": "vector"
     }
   ]
 }
